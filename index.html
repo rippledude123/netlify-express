@@ -1,6 +1,21 @@
 <!DOCTYPE html>
-<object
-  type="text/html"
-  data="/.netlify/functions/server"
-  style="width:100%;height:100%;"
->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RedditPoster</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form method="POST" action="/" id="form" style="display: block;">
+		<input type="text" placeholder="Client Id" name='client_id'>
+		<input type="text" placeholder="Client Secret" name='client_secret'>
+		<input type="text" placeholder="Login name" name='login_name' >
+		<input type="text" placeholder="Login Password" name='login_password'>
+		<input type="text" placeholder="Subreddit" name='subreddit'>
+		<input type="text" placeholder="Link" name='url'>
+		<input type="text" placeholder="title" name='title'>
+		<input type="submit" value="submit" id='submit_button'>
+	</form>
+	<script src="index.js"></script>
+</body>
+</html>

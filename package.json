@@ -1,32 +1,23 @@
 {
-  "name": "netlify-express",
-  "version": "0.0.1",
-  "description": "Example of how to deploy a Express.js Netlify app.",
-  "main": "functions/server.js",
-  "scripts": {
-    "build": "netlify-lambda build express",
-    "start": "nodemon server-local.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/neverendingqs/netlify-express.git"
-  },
-  "keywords": [
-    "netlify",
-    "express.js"
-  ],
-  "author": "neverendingqs",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/neverendingqs/netlify-express/issues"
-  },
-  "homepage": "https://github.com/neverendingqs/netlify-express#readme",
-  "dependencies": {},
-  "devDependencies": {
+  "name": "reddit-3.0",
+  "version": "1.0.0",
+  "description": "Reddit poster",
+  "main": "app.js",
+  "dependencies": {
     "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
     "express": "^4.17.1",
-    "netlify-lambda": "^1.6.3",
-    "nodemon": "^1.19.2",
-    "serverless-http": "^2.3.0"
-  }
+    "form-data": "^3.0.0",
+    "node-fetch": "^2.6.0",
+    "nodejs-base64": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "knar",
+  "license": "ISC",
+	"publishConfig": { 
+		"registry": "https://npm.pkg.github.com/" 
+	}
 }
